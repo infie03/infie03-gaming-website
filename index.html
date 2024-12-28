@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- ! This website is made by INFIE03-->
+
+    <!-- imp: This is not a fully responsive website (only nav bar is not respomsive but rest all the things are resposive) if you want to use this tamplate then please let me know other wise i will take a legal acction against you..-->
+    <!--? Thankyou :) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .head {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1500px;
+            margin-left: 10px;
+        }
+
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .txt {
+            margin: 0 20px;
+            font-size: 33px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .logo {
+            height: 185px;
+        }
+
+        ._d-text {
+            font-size: x-large;
+        }
+
+        .main-image {
+            justify-content: space-around;
+        }
+
+        .rating {
+            color: #ffd700;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .add-to-cart {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #3e8e41;
+        }
+
+        .hero {
+            background-image: url('images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero nav .nav-links {
+            list-style: none;
+            display: flex;
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .hero nav .nav-icons a {
+            margin-left: 20px;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+        }
+
+        .shop-now-btn {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .gaming-images {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .keyboard-img {
+            width: 1015px;
+            height: auto;
+        }
+
+        .console-img {
+            width: 800px;
+            height: auto;
+        }
+
+        .mouse-img {
+            width: 710px;
+            height: auto;
+        }
+
+        .header-social-icons {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .header-social-icon {
+            margin: 10px;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            margin: 10px;
+        }
+
+        .footer-social-icon {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ! This website is made by INFIE03-->
+    <section class="hero">
+        <nav>
+            <div class="nav-links">
+                <a href="#">HOME</a>
+                <a href="#">HOW THIS ALL WORKS</a>
+                <a href="#">BLOG</a>
+                <a href="#">FAQ</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <div class="gaming-images">
+                <img src="images/keybord.png" alt="Gaming Keyboard" class="keyboard-img">
+                <img src="images/joystick.png" alt="Gaming Console" class="console-img">
+                <img src="images/mouse.png" alt="Gaming Mouse" class="mouse-img">
+            </div>
+            <div class="hero-text">
+                <h1>GAMING PRODUCTS</h1>
+                <p>GET THE BEST GAMING PRODUCT</p>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="header-social-icons">
+                <a href="#" class="header-social-icon" onclick="showPopup('Twitter')"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="header-social-icon" onclick="showPopup('WhatsApp')"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/infie03" target="_blank" class="header-social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/infie_03" target="_blank" class="header-social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="head flex">
+            <div class="line"></div>
+            <div class="txt">WHY CHOOSE US</div>
+            <div class="line"></div>
+        </div>
+        <div class="content flex" style="justify-content: space-evenly;">
+            <div class="img">
+                <img src="images/change.png" alt="-image" class="logo" style=" margin-left: 10px;">
+                <h4 class="_d-text">Cash on Delivery</h4>
+            </div>
+            <div class="img">
+                <img src="images/exchange.png" alt="exchange-image" class="logo" style="
+    margin-left: 41px;">
+                <h4 class="_d-text">Easy Exchange & Returns</h4>
+            </div>
+            <div class="img">
+                <img src="images/free.png" alt="free-image" class="logo">
+                <h4 class="_d-text" style="
+    margin-left: 25px;">Free Shipping</h4>
+            </div>
+            <div class="img">
+                <img src="images/auth.png" alt="auth-image" class="logo" style="
+    margin-left: -23px;">
+                <h4 class="_d-text">100% Authentic</h4>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="head">
+            <div class="line"></div>
+            <div class="txt">GAMING HEADSET</div>
+            <div class="line"></div>
+        </div>
+        <div class="main-container">
+            <div class="main-image">
+                <div class="headimg">
+                    <img src="images/headphone1.png" alt="Gaming Headset 1" class="headphone">
+                    <h6>FANTECH SONATA MH90 MULTIPLATFORM GAMING HEADSET</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$87.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/headphone2.png" alt="Gaming Headset 2" class="headphone">
+                    <h6>RAZER BLACKSHARK V2 PRO WIRELESS GAMING HEADSET</h6>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$140.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/headphone3.png" alt="Gaming Headset 3" class="headphone">
+                    <h6>FANTECH CHIEF II HG20 RGB GAMING HEADSET</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$315.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="head">
+            <div class="line"></div>
+            <div class="txt">GAMING MOUSE</div>
+            <div class="line"></div>
+        </div>
+        <div class="main-container">
+            <div class="main-image">
+                <div class="headimg">
+                    <img src="images/mouse1.png" alt="Gaming Mouse 1" class="headphone">
+                    <h6>BIAGJI GAMING MOUSE WITH LED BACKLIT</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$87.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/mouse2.png" alt="Gaming Mouse 2" class="headphone">
+                    <h6>RAZER DEATHADDER MOUSE</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$140.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/mouse3.png" alt="Gaming Mouse 3" class="headphone">
+                    <h6>FANTECHTHOR X16 RGB GAMING MOUSE</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$315.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="head">
+            <div class="line"></div>
+            <div class="txt">GAMING KEYBOARD</div>
+            <div class="line"></div>
+        </div>
+        <div class="main-container">
+            <div class="main-image">
+                <div class="headimg">
+                    <img src="images/keyboad1.png" alt="Gaming Keyboard 1" class="headphone">
+                    <h6>RAZER BLACKWIDOW V3 MECHANICAL GAMING KEYBOARD</h6>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$87.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/keyboad2.png" alt="Gaming Keyboard 2" class="headphone">
+                    <h6>CORSAIR K100 RGB MECHANICAL GAMING KEYBOARD</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$140.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/keyboad3.png" alt="Gaming Keyboard 3" class="headphone">
+                    <h6>LOGITECH G PRO X MECHANICAL GAMING KEYBOARD</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$315.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="head">
+            <div class="line"></div>
+            <div class="txt">GAMING MONITOR</div>
+            <div class="line"></div>
+        </div>
+        <div class="main-container">
+            <div class="main-image">
+                <div class="headimg">
+                    <img src="images/monitor1.png" alt="Gaming Monitor 1" class="headphone">
+                    <h6>ASUS ROG SWIFT 360HZ GAMING MONITOR</h6>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$87.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/monitor2.png" alt="Gaming Monitor 2" class="headphone">
+                    <h6>ALIENWARE 34 CURVED QD-OLED GAMING MONITOR</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$140.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="headimg">
+                    <img src="images/monitor3.png   " alt="Gaming Monitor 3" class="headphone">
+                    <h6>LG ULTRAGEAR 27" 4K UHD GAMING MONITOR</h6>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$315.00</div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-love-us">
+        <div class="love-us-content">
+            <h2>Why our Customers Love us?</h2>
+            <div class="product-list">
+                <p>We offer a wide range of gaming products:</p>
+                <ul>
+                    <li>Gaming Mouse</li>
+                    <li>Gaming Headset</li>
+                    <li>Gaming Keyboard</li>
+                    <li>Gaming Monitor</li>
+                </ul>
+                <p class="regions">Across :- INDIA, NEPAL,BANGLEDESH</p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>500+ POSITIVE REVIEWS ON GOOGLE</h2>
+        <div class="rating-overall">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="review-count">Based on 517 reviews</p>
+
+        <div class="review-cards-container">
+            <div class="review-nav">
+                <button class="prev-review" onclick="scrollReviews('left')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-review" onclick="scrollReviews('right')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="review-cards">
+                <div class="review-card">
+                    <div class="google-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <p class="review-text">Great Product Using since 2006 working perfect.</p>
+                    <div class="reviewer-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="reviewer-name">RITIK JOSHI</div>
+                </div>
+                <div class="review-card">
+                    <div class="google-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <p class="review-text">Best Headset in the market which has best sound quality and mic as well.</p>
+                    <div class="reviewer-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="reviewer-name">JEMS FRIDAY</div>
+                </div>
+                <div class="review-card">
+                    <div class="google-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <p class="review-text">Best Experience using this products all are good build quality and all.</p>
+                    <div class="reviewer-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="reviewer-name">KILIYAN MBAPE</div>
+                </div>
+                <div class="review-card">
+                    <div class="google-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <p class="review-text">Best sales Product in the market with Best features.</p>
+                    <div class="reviewer-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="reviewer-name">Muhammad Usman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How this all works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">GAMING HEADSET</a></li>
+                    <li><a href="#">GAMING MOUSE</a></li>
+                    <li><a href="#">GAMING KEYBOARD</a></li>
+                    <li><a href="#">GAMING MONITOR</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-social-icon" onclick="showPopup('Twitter')"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon" onclick="showPopup('WhatsApp')"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/infie03" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/infie_03" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 INFIE_03</p>
+            <a href="https://www.instagram.com/r.samiccha/" target="_blank" style="
+            text-decoration: none;
+            color: #fff;
+            ">
+                <p>DESIGN BY: R.SAMICCHA</p>
+            </a>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup"></div>
+
+    <script>
+        function showPopup(platform) {
+            const popup = document.getElementById('popup');
+            popup.textContent = `I am not on ${platform}`;
+            popup.style.display = 'block';
+            
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
